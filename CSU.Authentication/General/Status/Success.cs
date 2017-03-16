@@ -4,7 +4,7 @@
     {
         public Success(R data)
         {
-            this.Data = data;//
+            this.Data = data;
         }
         
 
