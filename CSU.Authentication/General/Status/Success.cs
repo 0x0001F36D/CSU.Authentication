@@ -6,7 +6,6 @@
         {
             this.Data = data;
         }
-        
 
         public bool Status => true; 
          

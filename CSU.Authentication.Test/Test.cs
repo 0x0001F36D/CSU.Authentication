@@ -10,29 +10,21 @@ namespace CSU.Authentication.Test
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
-    using CSU.Authentication.General.Model;
     using Scopes.iLMS;
+    using General.Extension;
 
     class Test
     {
         static void Main(string[] args)
         {
 
-            iLMS ilms = new iLMS("<account>","<password>");
-            ilms.Login();
+            iLMS ilms = new iLMS(null,null);
+            var o =  ilms.Login();
 
-            /*
-            ilms.Login(new Site
+            foreach (var item in o.Reflect())
             {
-                Target = "http://ilms.csu.edu.tw/sys/lib/ajax/login_submit.php",
-                Parameters = new Parameters
-                {
-                    ["account"] = "40318223",
-                    ["password"] = "S124791273",
-                    ["secCode"] = "na",
-                    ["stay"] = "1"
-                }
-            });*/
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
         }

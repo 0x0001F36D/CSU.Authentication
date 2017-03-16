@@ -61,6 +61,7 @@
     <Compile Include="General\Status\Success.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scopes\iLMS\iLMS.cs" />
+    <Compile Include="General\Extension\SiteCallback.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -87,7 +87,6 @@
 
         public void Add(string key, Site site)=>this.sites.Add(key, site);
         
-
         public bool Remove(string key)=>this.sites.Remove(key);
         
     }
