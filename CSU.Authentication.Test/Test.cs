@@ -22,7 +22,7 @@ namespace CSU.Authentication.Test
             var o =  ilms.Login();
 
             foreach (var item in o.Reflect())
-            {
+            { 
                 Console.WriteLine(item);
             }
 
